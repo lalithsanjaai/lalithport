@@ -6,21 +6,21 @@ const achievements = [
         title: 'Codewar 1.0 Winner',
         icon: <Trophy className="text-yellow-400" size={32} />,
         image: '/pic/codeware.jpeg',
-        desc: 'Won 1st place in the 2024 Inter-College Hackathon for an innovative waste management solution.',
+        desc: 'Won 1st place in the codewar 1.0 of cash prize of 10000.',
         color: 'from-yellow-500/20 to-orange-500/20'
     },
     {
         title: 'BGS Certification',
         icon: <Award className="text-blue-400" size={32} />,
         image: '/pic/bgs.jpeg',
-        desc: 'Certified in Responsive Web Design from freeCodeCamp, mastering HTML, CSS Grid, and Flexbox.',
+        desc: 'participated in the BGS "ADVAYA"24hrs hackathon in bengalore.',
         color: 'from-blue-500/20 to-cyan-500/20'
     },
     {
         title: 'Research Paper Published',
         icon: <ScrollText className="text-pink-400" size={32} />,
         image: '/pic/presentation.jpeg',
-        desc: 'Presented "Thermochemical Conversion of Municipal Solid Waste" at Anna University, Chennai.',
+        desc: 'Presented "Thermochemical Conversion of Municipal Solid Waste" at Anna University, Chennai recognized as the best paper.',
         color: 'from-pink-500/20 to-rose-500/20'
     }
 ];
