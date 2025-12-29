@@ -13,7 +13,7 @@ const achievements = [
         title: 'BGS Certification',
         icon: <Award className="text-blue-400" size={32} />,
         image: '/pic/bgs.jpeg',
-        desc: 'participated in the BGS "ADVAYA"24hrs hackathon in bengalore.',
+        desc: 'participated in the BGS "ADVAYA"24hrs hackathon in bangalore.',
         color: 'from-blue-500/20 to-cyan-500/20'
     },
     {
