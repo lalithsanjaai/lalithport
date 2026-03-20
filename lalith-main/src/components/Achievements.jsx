@@ -5,7 +5,7 @@ const achievements = [
     {
         title: 'Codewar 1.0 Winner',
         icon: <Trophy className="text-yellow-400" size={32} />,
-        image: '/pic/codeware.jpeg',
+        image: '/pic/park.jpeg',
         desc: 'Won 1st place in the codewar 1.0 of cash prize of 10000.',
         color: 'from-yellow-500/20 to-orange-500/20'
     },
@@ -22,7 +22,30 @@ const achievements = [
         image: '/pic/presentation.jpeg',
         desc: 'Presented "Thermochemical Conversion of Municipal Solid Waste" at Anna University, Chennai recognized as the best paper.',
         color: 'from-pink-500/20 to-rose-500/20'
+    },
+
+     {
+        title: 'Runner in Gravito Hacks',
+        icon: <ScrollText className="text-pink-400" size={32} />,
+        image: '/pic/simats.jpeg',
+        desc: 'Runner in Gravito Hacks 2025,conducted by "GOOGLE DEVELOPER GROUPS" at savitha univercity,chennai.',
+        color: 'from-pink-500/20 to-rose-500/20'
+    },
+    {
+        title: 'Achivers award 2026',
+        icon: <ScrollText className="text-pink-400" size={32} />,
+        image: '/pic/achivers.jpeg',
+        desc: ' Our Team Recived Achivers award 2026 for the wining in hackathon and other competitions',
+        color: 'from-pink-500/20 to-rose-500/20'
+    },
+    {
+        title: 'Achivers award 2024',
+        icon: <ScrollText className="text-pink-400" size={32} />,
+        image: '/pic/codeware.jpeg',
+        desc: 'Recived Achivers award 2024 for the wining in hackathon and other competitions',
+        color: 'from-pink-500/20 to-rose-500/20'
     }
+
 ];
 
 const Achievements = () => {
