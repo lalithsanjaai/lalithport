@@ -1,12 +1,40 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, MapPin } from 'lucide-react';
+import { Send, Mail, MapPin, Loader2 } from 'lucide-react';
 
 const Contact = () => {
-    const handleSubmit = (e) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const fd = new FormData(e.target);
-        alert(`Thanks, ${fd.get('name')}! I'll get back to you at ${fd.get('email')} soon.`);
-        e.target.reset();
+        setIsSubmitting(true);
+        
+        const formData = new FormData(e.target);
+        // Replace this with your actual Web3Forms access key
+        // Get yours at: https://web3forms.com/
+        formData.append("access_key", "ef6f265b-1454-46a0-9899-aa9e84256711");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                alert(`Thanks, ${formData.get('name')}! I'll get back to you at ${formData.get('email')} soon.`);
+                e.target.reset();
+            } else {
+                console.error("Error", data);
+                alert("There was an issue sending your message. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting form", error);
+            alert("Network error. Please check your connection and try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -42,7 +70,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold">Email</h4>
-                                    <p className="text-gray-400">lalithsanjaai@gmail.com</p>
+                                    <p className="text-gray-400">lalithsanjaai28@gmail.com</p>
                                 </div>
                             </div>
 
@@ -108,9 +136,14 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                                disabled={isSubmitting}
+                                className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                <Send size={18} /> Send Message
+                                {isSubmitting ? (
+                                    <><Loader2 size={18} className="animate-spin" /> Sending...</>
+                                ) : (
+                                    <><Send size={18} /> Send Message</>
+                                )}
                             </button>
                         </form>
                     </motion.div>

@@ -51,7 +51,7 @@ const Hero = () => {
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <a
-                            href="/file/Lalithcv.pdf"
+                            href="/file/lalithcv.pdf"
                             download
                             className="px-8 py-3 bg-violet-600 hover:bg-violet-700 text-white rounded-full font-medium transition-all flex items-center justify-center gap-2 shadow-lg shadow-violet-500/25"
                         >
@@ -76,7 +76,7 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-gradient-to-tr from-violet-600 to-cyan-400 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                     <div className="relative rounded-3xl overflow-hidden glass border border-white/10 p-2 aspect-square max-w-md mx-auto">
                         <img
-                            src="/pic/profile.jpg"
+                            src="/pic/hero.jpeg"
                             alt="Lalith Sanjaai"
                             className="w-full h-full object-cover rounded-2xl"
                         />
