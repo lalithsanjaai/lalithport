@@ -1,0 +1,17 @@
+[0m[0m
+[0m[4mD:\lalithport\lalith-main\legacy\main.js[24m[0m
+[0m  [2m38:14[22m  [31merror[39m  'tick' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mD:\lalithport\lalith-main\src\components\Contact.jsx[24m[0m
+[0m  [2m61:68[22m   [31merror[39m  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m  [2m63:101[22m  [31merror[39m  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m[0m
+[0m[4mD:\lalithport\lalith-main\src\components\Hero.jsx[24m[0m
+[0m  [2m30:30[22m  [31merror[39m  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m[0m
+[0m[4mD:\lalithport\lalith-main\src\components\Skills.jsx[24m[0m
+[0m  [2m1:1[22m  [33mwarning[39m  Unused eslint-disable directive (no problems were reported from 'no-unused-vars')[0m
+[0m[0m
+[0m[31m[1m✖ 5 problems (4 errors, 1 warning)[22m[39m[0m
+[0m[31m[1m[22m[39m[31m[1m  0 errors and 1 warning potentially fixable with the `--fix` option.[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
